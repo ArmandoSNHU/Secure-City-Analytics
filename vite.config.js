@@ -10,11 +10,11 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // GitHub Pages serves project sites from a subpath
-// (https://armandosnhu.github.io/Secure_City_PD_RTCC_Dashboard/), so all
+// (https://armandosnhu.github.io/Secure-City-Analytics/), so all
 // built asset URLs must be prefixed with the repo name. Local dev is
 // unaffected — Vite still serves at http://localhost:5174/.
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/Secure_City_PD_RTCC_Dashboard/' : '/',
+  base: mode === 'production' ? '/Secure-City-Analytics/' : '/',
   server: {
     port: 5174,
   },

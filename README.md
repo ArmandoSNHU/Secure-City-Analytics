@@ -1,21 +1,21 @@
-# Secure City RTCC Analytics Platform
+# Secure City - Public-Safety Analytics Platform
 
-[![CI / Deploy](https://github.com/ArmandoSNHU/Secure_City_PD_RTCC_Dashboard/actions/workflows/deploy.yml/badge.svg)](https://github.com/ArmandoSNHU/Secure_City_PD_RTCC_Dashboard/actions/workflows/deploy.yml)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-00d4ff?logo=github)](https://armandosnhu.github.io/Secure_City_PD_RTCC_Dashboard/)
+[![CI / Deploy](https://github.com/ArmandoSNHU/Secure-City-Analytics/actions/workflows/deploy.yml/badge.svg)](https://github.com/ArmandoSNHU/Secure-City-Analytics/actions/workflows/deploy.yml)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-00d4ff?logo=github)](https://armandosnhu.github.io/Secure-City-Analytics/)
 [![Tests](https://img.shields.io/badge/tests-19%20passing-6E9F18?logo=vitest)](#testing--code-quality)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev)
 
-A role-based analytics platform for **Real Time Crime Centers (RTCCs)** — replacing manual Excel reporting with live KPI dashboards for command staff, performance visibility for analysts, and an interactive system architecture tour for technical reviewers. All data in the current release is mocked; no real law-enforcement data is used.
+A role-based analytics platform for **public-safety command centers** — replacing manual Excel reporting with live KPI dashboards for command staff, performance visibility for analysts, and an interactive system architecture tour for technical reviewers. All data in the current release is mocked; no real law-enforcement data is used.
 
 **Author:** Armando Gomez
-**Live demo:** https://armandosnhu.github.io/Secure_City_PD_RTCC_Dashboard/
+**Live demo:** https://armandosnhu.github.io/Secure-City-Analytics/
 
 ---
 
 ## Product Overview
 
-RTCC supervisors currently compile analyst activity reports by hand — collecting email submissions, merging spreadsheets, and producing a monthly PDF for command staff. This platform eliminates that process:
+command center supervisors currently compile analyst activity reports by hand — collecting email submissions, merging spreadsheets, and producing a monthly PDF for command staff. This platform eliminates that process:
 
 | Who | What they get |
 |---|---|
@@ -23,7 +23,7 @@ RTCC supervisors currently compile analyst activity reports by hand — collecti
 | **Analyst** | Personal KPIs, team ranking, LPR trend chart, and a 2-minute monthly submission form instead of an email thread |
 | **Technical reviewer / Architect** | A 5-section interactive tour: auth flow with annotated code, full component tree, data flow diagram, CI/CD pipeline, and tech stack rationale |
 
-**Differentiator vs. ArcGIS / Esri:** ArcGIS maps *where* crime happens. This platform tracks *how the team is performing* — the accountability layer that justifies RTCC budget and headcount to city leadership.
+**Differentiator vs. ArcGIS / Esri:** ArcGIS maps *where* crime happens. This platform tracks *how the team is performing* — the accountability layer that justifies command center budget and headcount to city leadership.
 
 
 ---
@@ -102,7 +102,7 @@ RTCC supervisors currently compile analyst activity reports by hand — collecti
 
 ## What This Project Is
 
-Real Time Crime Centers support patrol officers and partner agencies with live intelligence — License Plate Reader (LPR) hits, lookouts, and inter-agency requests. This dashboard simulates the **reporting and analytics layer** of such a center:
+public-safety command centers support patrol officers and partner agencies with live intelligence — License Plate Reader (LPR) hits, lookouts, and inter-agency requests. This dashboard simulates the **reporting and analytics layer** of such a center:
 
 - An **admin** sees center-wide metrics: total LPR hits, agencies assisted, alert trends, and a per-analyst activity table.
 - An **analyst** sees only their own performance and submits a monthly activity report.
@@ -128,7 +128,7 @@ The goal was to build something that *behaves* like a production app (async API 
 ## Project Structure — What Every File Does
 
 ```
-Secure_City_PD_RTCC_Dashboard/
+Secure-City-Analytics/
 ├── index.html                  # HTML shell; mounts React at #root
 ├── package.json                # Dependencies and npm scripts
 ├── vite.config.js              # Vite: React + Tailwind plugins; base path production-only
